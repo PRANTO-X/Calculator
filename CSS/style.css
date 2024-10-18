@@ -48,6 +48,7 @@ button {
     transition: background-color 0.3s ease;
     box-shadow: inset  0px 0px 10px rgba(113, 115, 119, 0.5);
     outline: none;
+    -webkit-tap-highlight-color: transparent
 }
 
 .eql-btn{
@@ -76,6 +77,7 @@ button:active{
 
 button:focus{
     background: transparent;
+    outline: none;
 }
 
 .eql-btn:hover,
