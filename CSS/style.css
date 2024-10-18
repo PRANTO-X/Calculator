@@ -47,6 +47,7 @@ button {
     cursor: pointer;
     transition: background-color 0.3s ease;
     box-shadow: inset  0px 0px 10px rgba(113, 115, 119, 0.5);
+    outline: none;
 }
 
 .eql-btn{
@@ -73,11 +74,16 @@ button:active{
     box-shadow: 0px 0px 10px rgba(113, 115, 119, 0.5);
 }
 
+button:focus{
+    background: transparent;
+}
+
 .eql-btn:hover,
 .eql-btn:active{
     background: #e65100; 
     box-shadow: 0px 0px 15px rgba(255, 111, 0, 0.7); 
 }
+
 
 .ac-btn:hover,
 .ac-btn:active{
@@ -110,8 +116,8 @@ button:active{
 @media (max-width: 400px) {
 
     .display {
-        height: 120px; 
-        font-size: 28px; 
+        height: 100px; 
+        font-size: 30px; 
     }
 
     button {
