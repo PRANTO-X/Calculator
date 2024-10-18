@@ -14,7 +14,7 @@ body {
     outline: none;
     text-align: end;
     font-size: 35px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 input::placeholder{
@@ -42,19 +42,55 @@ button {
     border-radius: 50%;
     height: 70px;
     width: 70px;
-    font-size: 1.2rem;
+    font-size: 20px;
     border: none;
     background: transparent;
     color: white;
     cursor: pointer;
     transition: background-color 0.3s ease;
+    box-shadow: 0px 0px 10px rgba(113, 115, 119, 0.5);
 }
 
-button:hover {
-    background-color: #555;
-    box-shadow: 0 0 1rem white;
+.eql-btn{
+    background: #ff6f00;
+    font-size: 25px;
 }
 
-button:active {
-    background-color: #777; /* Darker when pressed */
+.ac-btn{
+    background: #ff3b30;
 }
+
+.del-btn{
+    background: #1e88e5;
+}
+
+.op-btn{
+    font-size: 28px;
+}
+
+
+button:hover,
+button:active{
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.eql-btn:hover,
+.eql-btn:active{
+    background: #e65100; 
+    box-shadow: 0px 0px 15px rgba(255, 111, 0, 0.7); 
+}
+
+.ac-btn:hover,
+.ac-btn:active{
+    background: #e53935; 
+    box-shadow: 0px 0px 15px rgba(229, 57, 53, 0.7); 
+}
+
+.del-btn:hover,
+.del-btn:active{
+    background-color: #1565c0; 
+    box-shadow: 0px 0px 15px rgba(21, 101, 192, 0.7); 
+}
+
+
+
