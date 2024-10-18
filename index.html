@@ -8,56 +8,56 @@
 </head>
 <body>
     <div class="calculator">
-       <input type="text" placeholder="0" class="display">
+       <input type="text" placeholder="" class="display" readonly>
        
       <div class="btn">
         <div>
-            <button>(</button>
-            <button>)</button>
-            <button class="del-btn">DEL</button>
-            <button class="ac-btn">AC</button>
+            <button onclick="number('(')">(</button>
+            <button onclick="number(')')">)</button>
+            <button class="del-btn" onclick="backSpace()">DEL</button>
+            <button class="ac-btn" onclick="allClear()">AC</button>
            </div>
     
            <div>
-            <button>x&sup2</button>
-            <button>x&sup3</button>
-            <button>√</button>
-            <button class="op=btn">%</button>
+            <button onclick="number('²')">x&sup2</button>
+            <button class="op-btn" onclick="number('^')">^</button>
+            <button onclick="number('√(')">√</button>
+            <button onclick="number('log(')">log</button>
            </div>
     
            <div>
-            <button>sin</button>
-            <button>cos</button>
-            <button>tan</button>
-            <button class="op-btn">÷</button>
+            <button onclick="number('sin(')">sin</button>
+            <button onclick="number('cos(')">cos</button>
+            <button onclick="number('tan(')">tan</button>
+            <button class="op-btn" onclick="number('÷')">÷</button>
            </div>
     
            <div>
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button class="op-btn">×</button>
+            <button onclick="number(7)">7</button>
+            <button onclick="number(8)">8</button>
+            <button onclick="number(9)">9</button>
+            <button class="op-btn" onclick="number('×')">×</button>
            </div>
     
            <div>
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button class="op-btn">+</button>
+            <button onclick="number(4)">4</button>
+            <button onclick="number(5)">5</button>
+            <button onclick="number(6)">6</button>
+            <button class="op-btn" onclick="number('+')">+</button>
            </div>
     
            <div>
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button class="op-btn">-</button>
+            <button onclick="number(1)">1</button>
+            <button onclick="number(2)">2</button>
+            <button onclick="number(3)">3</button>
+            <button class="op-btn" onclick="number('-')">-</button>
            </div>
     
            <div>
-            <button>00</button>
-            <button>0</button>
-            <button>.</button>
-            <button class="eql-btn">=</button>
+            <button onclick="number('00')">00</button>
+            <button onclick="number(0)">0</button>
+            <button onclick="number('.')">.</button>
+            <button class="eql-btn" onclick="calculate()">=</button>
            </div>
       </div>
 
